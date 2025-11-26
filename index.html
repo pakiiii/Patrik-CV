@@ -224,8 +224,8 @@ function draw() {
 draw();
 
 // CountAPI – live visitor counter
-fetch('https://api.countapi.xyz/hit/pakiiii.github.io/Patrik-CV/')
-  .then(response => response.json())
+fetch('https://api.countapi.xyz/hit/pakiiii.github.io/Patrik-CV')
+  .then(res => res.json())
   .then(data => {
       document.getElementById('visit-count').textContent = data.value;
   })
@@ -237,3 +237,4 @@ fetch('https://api.countapi.xyz/hit/pakiiii.github.io/Patrik-CV/')
 
 </body>
 </html>
+
