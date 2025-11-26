@@ -73,38 +73,62 @@
 <div class="content">
     <section id="hero">
         <h1>Patrik Ibraim</h1>
+        <!-- <h2>Necu tu nista stavljati</h2>-->
         <p>I graduated from the University of Applied Sciences Velika Gorica, majoring in Computer Systems Maintenance, and through student internships and employment, I gained practical experience in system administration and server maintenance. I am passionate about optimizing IT systems and solving technical challenges.</p>
     </section>
 
     <section id="about">
         <h2>About me</h2>
-        <p>During my vocational high school training, I had the opportunity to complete practical work, gaining experience in basic electrical installations, including mounting outlets, switches, and lighting. I also assisted with cable routing, small panel connections, as well as simple diagnostics and replacements. I chose to pursue a career in IT because I have been working with computers for over 18 years. I completed my university studies in a field that aligns with my career goals, while remaining open to exploring different areas within the IT sector. I am versatile, motivated, and genuinely interested in all aspects of IT. Most of my hands-on experience comes from system administration, and I have developed strong teamwork skills, consistently achieving excellent results with my colleagues. I am currently seeking a company where I can combine my existing knowledge with continuous professional development. I believe your firm provides an environment where learning never stops, and where I could further expand my skills. I also hope that my experience so far will allow me to contribute meaningfully to the team.</p>
+        <p>During my vocational high school training, I had the opportunity to complete practical work, gaining experience in basic electrical installations, including mounting outlets, switches, and lighting.
+            I also assisted with cable routing, small panel connections, as well as simple diagnostics and replacements.
+            I chose to pursue a career in IT because I have been working with computers for over 18 years.
+            I completed my university studies in a field that aligns with my career goals, while remaining open to exploring different areas within the IT sector.
+            I am versatile, motivated, and genuinely interested in all aspects of IT.
+            Most of my hands-on experience comes from system administration, and I have developed strong teamwork skills, consistently achieving excellent results with my colleagues. I am currently seeking a company where I can combine my existing knowledge with continuous professional development.
+            I believe your firm provides an environment where learning never stops, and where I could further expand my skills. I also hope that my experience so far will allow me to contribute meaningfully to the team.
+        </p>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <p>Elektrostrojarska obrtnička škola (2015 - 2019)</p>
         <p>Veleučilište Velika Gorica Održavanje računalnih sustava/Computer Systems Maintenance (2021 - 2025)</p>
+        <ul>
+            <!--<li>Programiranje, baze podataka, računalne mreže</li>
+            <li>Razvoj projekata: web aplikacije, skripting, automatizacija</li>-->
+        </ul>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>HTML, Python, C, SQL, Cisco Network, Linux, VMware, VirtualBox, Hyper-V</li>
-            <li>Server installation, configuration, and maintenance, Network fundamentals (TCP/IP, DHCP, DNS, VPN), Azure, M365 portal, Active directory</li>
-            <li>Problem solving, team work, Fast learning and adaptability, agile development, Small project coordination, Multitasking, planning and task prioritization</li>
+            <li>HTML, Python, C, SQL, Cisco Network, Linux, VMware, VirtualBox, Hyper-V,</li>
+            <li>Server installation, configuration, and maintenance, Network fundamentals (TCP/IP, DHCP, DNS, VPN), Azure, M365 portal, Active directory. </li>
+            <li>Problem solving, team work,Fast learning and adaptability, agile development, Small project coordination, Multitasking, lanning and task prioritization</li>
         </ul>
     </section>
 
-    <section id="work-experience">
+    <section id="Work Experience">
         <h2>Work Experience</h2>
         <ul>
             <li>Hrvatski Telekom [Telesales] (Jul 2021 - May 2022  11 months) [part time]</li>
-            <p>Gained valuable experience in customer communication through telesales, providing tailored solutions and maintaining high customer satisfaction. Later transitioned into the role of ICT Technician, where I provided internal IT support and ensured smooth system operations.</p>
+            <p>Gained valuable experience in customer communication through telesales, providing tailored solutions and maintaining high customer satisfaction. Progressed to mentoring new employees, sharing best practices, and supporting their development. Actively participated in team meetings focused on effective communication, teamwork, and leadership skills.
+                Later transitioned into the role of ICT Technician, where I provided internal IT support, ensured smooth system operations, and facilitated access to digital tools and services for internal users.</p>
             <li>Libusoft Cicom [Information Technology Support Specialist] (May 2022 - Nov 2022 - 7 months) [Project]</li>
-            <p>Contacting clients, connecting to servers, transferring files, installing latest versions and hotfixes, testing applications, and documenting system changes.</p>
+            <p>Contacting the client and scheduling the installation appointment.
+                Connecting to the server.
+                Transferring files.
+                Preparing for installation.
+                Installing the latest version.
+                Installing the latest available hotfix.
+                Refreshing the database on the SPI service in application.
+                Testing the applications.
+                Informing the client upon completion of the installation.
+                Updating the version in EVOK (BUSINESS APPLICATION).
+                Actively involved in documenting ongoing system changes and updates. Maintained clear and accurate records to ensure traceability and transparency. Collaborated closely with team members, emphasizing effective communication, mutual understanding, and finding compromises to reach optimal solutions.</p>
             <li>Kineziološki fakultet [Junior System administrator] (Dec 2022 - Nov 2025 - 4 years) [Full time]</li>
-            <p>Provided internal IT support, maintained smooth system operations, and facilitated access to digital tools and services for internal users.</p>
+            <p>Gained valuable experience in customer communication through telesales, providing tailored solutions and maintaining high customer satisfaction. Progressed to mentoring new employees, sharing best practices, and supporting their development. Actively participated in team meetings focused on effective communication, teamwork, and leadership skills.
+                Later transitioned into the role of ICT Technician, where I provided internal IT support, ensured smooth system operations, and facilitated access to digital tools and services for internal users.</p>
         </ul>
     </section>
 
@@ -113,13 +137,6 @@
         <p>Email: ibraimpatrik99@gmail.com</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/patrik-ibraim-39a317283/">link</a></p>
     </section>
-
-    <!-- Visitor Counter -->
-    <div id="visitor-counter" style="text-align:center; color:white; margin-top:20px;">
-        <h3>Visitor Analytics</h3>
-        <p>Total Visits: <span id="visit-count">Loading...</span></p>
-    </div>
-
 </div>
 
 <script>
@@ -140,6 +157,7 @@ document.addEventListener("mousemove", e => {
     mouse.y = e.clientY;
 });
 
+// Funkcija za stvaranje mreža
 function createNodes(count, speed, radius) {
     const arr = [];
     for (let i = 0; i < count; i++) {
@@ -155,6 +173,7 @@ function createNodes(count, speed, radius) {
     return arr;
 }
 
+// 3 mreže – više čvorova, sporije kretanje
 const gridFar   = createNodes(100, 0.05);
 const gridMid   = createNodes(120, 0.08);
 const gridClose = createNodes(150, 0.12);
@@ -165,8 +184,10 @@ const layers = [
     { nodes: gridClose, range: 180, force: 0.002, color: [100,200,255], rotSpeed: 0.0015 }
 ];
 
+// Crtanje mreže
 function drawLayer(layer) {
     const nodes = layer.nodes;
+
     nodes.forEach(n => {
         n.x += n.vx;
         n.y += n.vy;
@@ -175,6 +196,7 @@ function drawLayer(layer) {
         if (n.x < 0 || n.x > w) n.vx *= -1;
         if (n.y < 0 || n.y > h) n.vy *= -1;
 
+        // Odbijanje od miša + lagana rotacija
         const dx = n.x - mouse.x;
         const dy = n.y - mouse.y;
         const dist = Math.sqrt(dx*dx + dy*dy);
@@ -190,18 +212,21 @@ function drawLayer(layer) {
             n.y += sin;
         }
 
+        // čvor
         ctx.fillStyle = "rgba(150,200,255,0.7)";
         ctx.beginPath();
         ctx.arc(n.x, n.y, 2 + Math.sin(n.angle)*0.8, 0, Math.PI*2);
         ctx.fill();
     });
 
+    // vodovi
     nodes.forEach(a => {
         nodes.forEach(b => {
             if(a === b) return;
             const dx = a.x - b.x;
             const dy = a.y - b.y;
             const d = Math.sqrt(dx*dx + dy*dy);
+
             if(d < layer.range) {
                 const strength = 1 - d/layer.range;
                 const energised = Math.hypot(mouse.x - a.x, mouse.y - a.y) < 200 ? 1.2 : 0.3;
@@ -221,20 +246,9 @@ function draw() {
     layers.forEach(layer => drawLayer(layer));
     requestAnimationFrame(draw);
 }
-draw();
 
-// CountAPI – live visitor counter
-fetch('https://api.countapi.xyz/hit/pakiiii.github.io/Patrik-CV')
-  .then(res => res.json())
-  .then(data => {
-      document.getElementById('visit-count').textContent = data.value;
-  })
-  .catch(err => {
-      console.error('Error fetching visit count:', err);
-      document.getElementById('visit-count').textContent = 'Error';
-  });
+draw();
 </script>
 
 </body>
 </html>
-
